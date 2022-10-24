@@ -9,6 +9,10 @@
   margin: 0 0 45px;
 }
 
+.portfolio__links {
+  padding: 0;
+}
+
 .portfolio__link {
   margin-top: 20px;
   display: flex;
@@ -20,6 +24,14 @@
   font-size: 30px;
   line-height: 50px;
   letter-spacing: -0.04em;
+  cursor: pointer;
+  transition-duration: .4s;
+  text-decoration: none;
+  color: #fff;
+}
+
+.portfolio__link-name:hover {
+  opacity: .6;
 }
 
 .portfolio__link-arrow {

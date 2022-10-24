@@ -21,12 +21,12 @@
 }
 
 .search-form__button {
-  height: 44px;
-  width: 44px;
+  min-height: 44px;
+  min-width: 44px;
   background-image: url(../../images/find-button.svg);
   border: none;
   background-color: #202020;
-  background-size: 100%;
+  background-size: contain;
   background-repeat: no-repeat;
   cursor: pointer;
   transition-duration: .4s;
@@ -55,10 +55,5 @@
 
   .search-form__input {
     height: 44px;
-  }
-
-  .search-form__button {
-    height: 45px;
-    width: 55px;
   }
 }
