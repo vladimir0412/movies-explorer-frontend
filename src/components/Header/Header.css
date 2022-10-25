@@ -1,0 +1,76 @@
+.header {
+  padding: 18px 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-main {
+  background-color: #073042;
+}
+
+.header__logo {
+  opacity: 1;
+  transition-duration: .4s;
+}
+
+.header__logo:hover {
+  opacity: .6;
+}
+
+.header__sign-link {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  opacity: 1;
+  transition-duration: .4s;
+}
+
+.header__sign-link:hover {
+  opacity: .6;
+}
+
+.header__sign-button {
+  width: 76px;
+  height: 32px;
+  border-radius: 3px;
+  background: #3DDC84;
+  border: none;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  margin-left: 30px;
+  cursor: pointer;
+  opacity: 1;
+  transition-duration: .4s;
+}
+
+.header__sign-button:hover {
+  opacity: .6;
+}
+
+@media screen and (max-width: 800px) {
+  .header {
+    padding: 18px 30px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .header {
+    padding: 18px 14px;
+  }
+
+  .header__sign-link {
+    font-size: 10px;
+    line-height: 16px;
+  }
+
+  .header__sign-button {
+    width: 54px;
+    height: 26px;
+    font-size: 10px;
+    margin-left: 15px;
+  }
+}
