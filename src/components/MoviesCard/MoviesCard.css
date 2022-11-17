@@ -45,8 +45,14 @@
   opacity: .6;
 }
 
-.movies-card__add-button:focus {
+.movies-card__add-button_active {
+  width: 16px;
+  height: 16px;
+  border: 2px solid white;
   background-color: #2BE080;
+  border-radius: 50%;
+  cursor: pointer;
+  transition-duration: .4s;
 }
 
 .movies-card__close-button {
