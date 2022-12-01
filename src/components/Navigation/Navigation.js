@@ -8,11 +8,11 @@ function Navigation({isOpen, onClose}) {
       <div className="navigation__container">
         <button className="navigation__close-button" onClick={onClose} type="button" />
         <nav className="navigation__links">
-          <Link className="navigation__link" to="/">Главная</Link>
-          <Link className="navigation__link" to="/movies">Фильмы</Link>
-          <Link className="navigation__link" to="/saved-movies">Сохраненные фильмы</Link>
+          <Link className="navigation__link" to="/" onClick={onClose}>Главная</Link>
+          <Link className="navigation__link" to="/movies" onClick={onClose}>Фильмы</Link>
+          <Link className="navigation__link" to="/saved-movies" onClick={onClose}>Сохраненные фильмы</Link>
         </nav>
-        <Link className="navigation__profile" to="/profile">
+        <Link className="navigation__profile" to="/profile" onClick={onClose}>
           <p className="navigation__profile-text">Аккаунт</p>
           <div className="navigation__profile-icon">
             <img className="navigation__profile-image" src={profileIcon} alt="Профиль" />

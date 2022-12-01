@@ -4,6 +4,10 @@
   padding: 79px 70px 20px;
 }
 
+.footer_none {
+  display: none;
+}
+
 .footer__text {
   margin: 0;
   text-align: center;

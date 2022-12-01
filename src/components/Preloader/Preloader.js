@@ -1,8 +1,8 @@
 import './Preloader.css'
 
-function Preloader() {
+function Preloader({isLoad}) {
   return (
-    <div className="preloader">
+    <div className={"preloader" + (isLoad?" preloader_visible":"")}>
       <div className="preloader__container">
         <div className="preloader__round"></div>
       </div>

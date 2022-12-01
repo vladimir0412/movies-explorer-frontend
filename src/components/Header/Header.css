@@ -5,7 +5,11 @@
   align-items: center;
 }
 
-.header-main {
+.header_none {
+  display: none;
+}
+
+.header_main {
   background-color: #073042;
 }
 
