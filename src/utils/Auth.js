@@ -1,4 +1,4 @@
-export const BASE_URL = 'movies-explorer-api-tawny.vercel.app';
+export const BASE_URL = 'https://movies-explorer-api-tawny.vercel.app';
 
 export const register = (email, password, name) => {
   return fetch(`${BASE_URL}/signup`, {
