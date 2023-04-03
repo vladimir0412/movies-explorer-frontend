@@ -330,12 +330,7 @@ function App() {
               onClose={onClose}
               onClick={setIsNavigationOpen} >
             </Route>
-            <Route path="/signup">
-              {loggedIn ? <Redirect to="/movies" /> : <Register onSubmit={toRegister} isRegisterError={registerError}/>}
-            </Route>
-            <Route path="/signin">
-              {loggedIn ? <Redirect to="/movies" /> : <Login onSubmit={toLogin}/>}
-            </Route>
+            
             <Route exact={true} path="*">
               <NotFound />
             </Route>
