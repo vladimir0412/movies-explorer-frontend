@@ -282,7 +282,7 @@ function App() {
                 onClose = {onClose}
                 onClick = {setIsNavigationOpen}/>
             </Route>
-            <Route
+            <ProtectedRoute
               path="/movies"
               loggedIn={loggedIn}
               component={Movies}
@@ -298,8 +298,8 @@ function App() {
               onClose={onClose}
               onClick={setIsNavigationOpen}
               searchMovie={searchMovie} >
-            </Route>
-            <Route
+            </ProtectedRoute>
+            <ProtectedRoute
               path="/saved-movies"
               loggedIn={loggedIn}
               component={SavedMovies}
@@ -317,8 +317,8 @@ function App() {
               movieCards={savedMoviesCard}
               getSavedMovies={getSavedMovies}
               searchedMovie={searchedSavedMoviesCard} >
-            </Route>
-            <Route
+            </ProtectedRoute>
+            <ProtectedRoute
               path="/profile"
               loggedIn={loggedIn}
               logOut={logOut}
@@ -329,8 +329,13 @@ function App() {
               isOpen={isNavigationOpen}
               onClose={onClose}
               onClick={setIsNavigationOpen} >
+            </ProtectedRoute>
+            <Route path="/signup">
+              {loggedIn ? <Redirect to="/movies" /> : <Register onSubmit={toRegister} isRegisterError={registerError}/>}
             </Route>
-            
+            <Route path="/signin">
+              {loggedIn ? <Redirect to="/movies" /> : <Login onSubmit={toLogin}/>}
+            </Route>
             <Route exact={true} path="*">
               <NotFound />
             </Route>
